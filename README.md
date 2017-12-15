@@ -17,7 +17,7 @@ The goal of this project is to develop code that will operate the camera on the 
 ## Additional Info
 I was able to take pictues on the Raspberry Pi using the following command on terminal
 ```
-raspistill -0 <filename>
+raspistill -o <filename>
 ```
 There are additional flags for the `raspistill` command and I do not believe that command will work in any programming language
 There should be a library for using the camera in C or Python

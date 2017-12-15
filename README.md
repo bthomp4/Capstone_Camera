@@ -20,5 +20,6 @@ I was able to take pictues on the Raspberry Pi using the following command on te
 raspistill -o <filename>
 ```
 There are additional flags for the `raspistill` command and I do not believe that command will work in any programming language
+
 There should be a library for using the camera in C or Python
 

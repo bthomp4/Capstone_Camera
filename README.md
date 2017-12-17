@@ -25,3 +25,4 @@ There are additional flags for the `raspistill` command and I do not believe tha
 
 The appropriate coding language to be used for the camera is Python. We were able to use the Python library `piCamera` to take still pictures. The `camera.py` takes 5 still pictures using the camera. The images are correctly saved to the file. 
 
+The source used to see example coding for the PiCamera: (https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)

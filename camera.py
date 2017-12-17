@@ -4,12 +4,16 @@
 from picamera import PiCamera
 from time import sleep
 
+NUM_PICTURES = 5
+SLEEP_TIME = 50/100 
+
 camera = PiCamera()
 
-
-for i in range(5):
+for i in range(NUM_PICTURES):
     camera.start_preview()
-    sleep(5)
+    sleep(SLEEP_TIME)
     #Used to take a still picture
-    camera.capture('test' + str(i) + '.jpg')
+    picture = ('test' + str(i) + '.jpg')	
+    camera.capture(picture)
+
     camera.stop_preview()

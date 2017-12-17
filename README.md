@@ -10,7 +10,8 @@ The goal of this project is to develop code that will operate the camera on the 
    - ~The image can be saved to a file to be opened later~
 2. Get the raspberry pi to record input and display on the screen without saving the file
    - I'm guessing that a gui window will need to be created to display the image
-   - Again c might be better in the long run but if python gets it working now that is fine too
+   - ~Again c might be better in the long run but if python gets it working now that is fine too~
+   - Use Python for the code
 3. Have the camera update the image approximately once every second
    - ~Again no saving the file just display the image~
    - Save only one file and display, do not save multiple images

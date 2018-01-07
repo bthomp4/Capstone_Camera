@@ -15,7 +15,7 @@ The goal of this project is to develop code that will operate the camera on the 
 3. Have the camera update the image approximately once every second
    - ~Again no saving the file just display the image~
    - Save only one file and display, do not save multiple images
-
+4. Create a second window to display the image
 ## Additional Info
 We were  able to take pictues on the Raspberry Pi using the following command on terminal
 ```

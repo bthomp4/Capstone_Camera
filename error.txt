@@ -1,0 +1,23 @@
+mmal: mmal_vc_component_create: failed to create component 'vc.ril.camera' (1:ENOMEM)
+mmal: mmal_component_create_core: could not create component 'vc.ril.camera' (1)
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera/camera.py", line 456, in _init_camera
+    self._camera = mo.MMALCamera()
+  File "/usr/lib/python3/dist-packages/picamera/mmalobj.py", line 2279, in __init__
+    super(MMALCamera, self).__init__()
+  File "/usr/lib/python3/dist-packages/picamera/mmalobj.py", line 633, in __init__
+    prefix="Failed to create MMAL component %s" % self.component_type)
+  File "/usr/lib/python3/dist-packages/picamera/exc.py", line 184, in mmal_check
+    raise PiCameraMMALError(status, prefix)
+picamera.exc.PiCameraMMALError: Failed to create MMAL component b'vc.ril.camera': Out of memory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "camera.py", line 10, in <module>
+    camera = PiCamera()
+  File "/usr/lib/python3/dist-packages/picamera/camera.py", line 431, in __init__
+    self._init_camera(camera_num, stereo_mode, stereo_decimate)
+  File "/usr/lib/python3/dist-packages/picamera/camera.py", line 460, in _init_camera
+    "Camera is not enabled. Try running 'sudo raspi-config' "
+picamera.exc.PiCameraError: Camera is not enabled. Try running 'sudo raspi-config' and ensure that the camera has been enabled.
